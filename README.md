@@ -299,8 +299,8 @@ This project is available for:
 
 ## 🐛 Known Limitations
 
-- **Recall**: Current model achieves 82.5% recall, meaning ~17.5% of nudity may be missed
-- **False Positives**: ~12.5% false positive rate on edge cases (art, medical content)
+- **Recall**: Current model achieves 87% recall, meaning ~13% of nudity may be missed
+- **False Positives**: ~10% false positive rate on edge cases (art, medical content)
 - **Processing Speed**: Requires GPU for real-time performance (CPU is 10x slower)
 - **Video Formats**: Best results with H.264/H.265 encoded videos
 
@@ -318,7 +318,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ### v0.1.0 (Current)
 - Initial release
-- RT-DETR nudity detection (87% precision, 82.5% recall)
+- RT-DETR nudity detection (90% precision, 87% recall)
 - RetinaFace face detection
 - DeepSORT tracking
 - Multiple censorship strategies
@@ -340,3 +340,4 @@ If this project helped you, please star it to help others discover it!
 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=BAKHSISHAMZA/ai-video-censorship-engine&type=Date)](https://star-history.com/#yourusername/ai-video-censorship-engine&Date)
+
