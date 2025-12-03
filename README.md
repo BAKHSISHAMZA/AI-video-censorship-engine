@@ -328,9 +328,9 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## 📧 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/ai-video-censorship-engine/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/ai-video-censorship-engine/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/BAKHSISHAMZA/ai-video-censorship-engine/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/BAKHSISHAMZA/ai-video-censorship-engine/discussions)
+- **Email**: bakhsishamza@gmail.com
 
 ---
 
@@ -338,4 +338,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 If this project helped you, please star it to help others discover it!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-video-censorship-engine&type=Date)](https://star-history.com/#yourusername/ai-video-censorship-engine&Date)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BAKHSISHAMZA/ai-video-censorship-engine&type=Date)](https://star-history.com/#yourusername/ai-video-censorship-engine&Date)
