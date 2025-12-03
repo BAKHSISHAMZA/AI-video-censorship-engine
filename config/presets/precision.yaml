@@ -1,0 +1,13 @@
+# Precision mode - Minimize false positives
+
+detection:
+  nudity_confidence_threshold: 0.65  # Higher = more conservative
+  face_confidence_threshold: 0.70
+  
+rendering:
+  censorship_method: blur
+  blur_kernel_size: 51
+  region_padding: 5  # Less padding
+  
+tracking:
+  min_track_hits: 5  # Require more confidence before censoring

@@ -1,0 +1,42 @@
+# Base configuration for AI Video Censorship Engine
+
+# Detection parameters
+detection:
+  nudity_confidence_threshold: 0.45
+  face_confidence_threshold: 0.50
+  
+# Tracking parameters
+tracking:
+  max_track_age: 30
+  min_track_hits: 3
+  iou_threshold: 0.5
+  
+# Rendering parameters
+rendering:
+  censorship_method: blur  # blur | pixelate | blackout | emoji
+  blur_kernel_size: 51
+  pixelate_block_size: 16
+  region_padding: 10
+  temporal_smoothing: true
+  smoothing_alpha: 0.7
+  
+# Performance parameters
+performance:
+  batch_size: 16
+  skip_frames: 0
+  blur_quality_threshold: 100.0
+  use_gpu: true
+  device: cuda:0
+  
+# Model paths
+models:
+  rtdetr_path: models/rtdetr_nudity.pt
+  
+# Output parameters
+output:
+  preserve_audio: true
+  export_metadata: true
+  metadata_format: json
+  use_nvenc: true
+  output_codec: h264
+  crf: 23

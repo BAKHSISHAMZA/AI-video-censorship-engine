@@ -1,0 +1,12 @@
+# Balanced mode - Good tradeoff between recall and precision
+
+detection:
+  nudity_confidence_threshold: 0.45
+  face_confidence_threshold: 0.50
+  
+rendering:
+  censorship_method: blur
+  blur_kernel_size: 51
+  
+tracking:
+  min_track_hits: 3
