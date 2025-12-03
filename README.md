@@ -293,7 +293,7 @@ This project is available for:
 - **Commercial licensing**: Contact for custom deployment and support
 - **Consulting services**: Available for integration and customization
 
-**Contact**: your.email@example.com
+**Contact**: bakhsishamza@gmail.com
 
 ---
 
@@ -340,4 +340,5 @@ If this project helped you, please star it to help others discover it!
 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=BAKHSISHAMZA/ai-video-censorship-engine&type=Date)](https://star-history.com/#yourusername/ai-video-censorship-engine&Date)
+
 
