@@ -1,0 +1,178 @@
+{
+  "input_video": "/content/drive/MyDrive/PepperyUnderstatedChrysalis.mp4",
+  "output_video": "/content/censored_demo.mp4",
+  "processing_stats": {
+    "input_path": "/content/drive/MyDrive/PepperyUnderstatedChrysalis.mp4",
+    "output_path": "/content/censored_demo.mp4",
+    "metadata_path": null,
+    "statistics": {
+      "total_frames": 682,
+      "frames_processed": 682,
+      "frames_skipped": 0,
+      "processing_time_seconds": 139.17193841934204,
+      "fps": 4.900413170541972
+    },
+    "detections": {
+      "total": 1399,
+      "nudity": 738,
+      "faces": 661,
+      "tracks": 3
+    },
+    "performance": {
+      "avg_detection_time_ms": 3936.642246246338,
+      "avg_tracking_time_ms": 4.275007247924805,
+      "avg_rendering_time_ms": 918.9987850189209
+    },
+    "config": {
+      "nudity_confidence_threshold": 0.35,
+      "face_confidence_threshold": 0.5,
+      "max_track_age": 5,
+      "min_track_hits": 1,
+      "iou_threshold": 0.5,
+      "class_strategies": {
+        "face": "motion_blur",
+        "breast": "blur",
+        "buttocks": "blackbox",
+        "genitals": "blackbox"
+      },
+      "default_censorship_method": "blur",
+      "blur_kernel_size": 60,
+      "blur_intensity": 1.0,
+      "motion_blur_kernel_size": 25,
+      "motion_blur_angle": 55.0,
+      "motion_blur_intensity": 1.0,
+      "pixelate_block_size": 20,
+      "pixelate_intensity": 1.0,
+      "blackbox_color": [
+        0,
+        0,
+        0
+      ],
+      "blackbox_opacity": 1.0,
+      "blackbox_rounded_corners": 0,
+      "region_padding": 40,
+      "temporal_smoothing": true,
+      "batch_size": 28,
+      "output_resolution": null,
+      "preserve_audio": true
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "performance_metrics": {
+    "pipeline_duration_seconds": 0.0,
+    "stage_timings": {
+      "detection": {
+        "name": "detection",
+        "call_count": 25,
+        "total_time_ms": 98416.05615615845,
+        "mean_ms": 3936.642246246338,
+        "min_ms": 1332.681655883789,
+        "max_ms": 6637.217998504639
+      },
+      "tracking": {
+        "name": "tracking",
+        "call_count": 25,
+        "total_time_ms": 106.87518119812012,
+        "mean_ms": 4.275007247924805,
+        "min_ms": 1.4259815216064453,
+        "max_ms": 9.628772735595703
+      },
+      "rendering": {
+        "name": "rendering",
+        "call_count": 25,
+        "total_time_ms": 22974.969625473022,
+        "mean_ms": 918.9987850189209,
+        "min_ms": 195.57666778564453,
+        "max_ms": 1649.1341590881348
+      }
+    },
+    "detections": {
+      "total": 1399,
+      "by_class": {
+        "breast": 299,
+        "face": 661,
+        "buttocks": 439
+      },
+      "avg_confidence": 0.7969168953762641,
+      "min_confidence": 0.5028865933418274,
+      "max_confidence": 0.8748483061790466
+    },
+    "tracks": {
+      "unique_tracks": 23,
+      "avg_age": 69.87516425755585,
+      "max_age": 217,
+      "avg_hits": 70.41392904073588
+    },
+    "memory": {
+      "gpu_0_allocated_mb": 0.0,
+      "gpu_0_reserved_mb": 0.0,
+      "gpu_0_max_allocated_mb": 0.0,
+      "cpu_memory_mb": 2946.13671875,
+      "cpu_memory_percent": 22.70529219466539
+    }
+  },
+  "configuration": {
+    "nudity_confidence_threshold": 0.35,
+    "face_confidence_threshold": 0.5,
+    "max_track_age": 5,
+    "min_track_hits": 1,
+    "iou_threshold": 0.5,
+    "class_strategies": {
+      "face": "motion_blur",
+      "breast": "blur",
+      "buttocks": "blackbox",
+      "genitals": "blackbox"
+    },
+    "default_censorship_method": "blur",
+    "blur_kernel_size": 60,
+    "blur_intensity": 1.0,
+    "motion_blur_kernel_size": 25,
+    "motion_blur_angle": 55.0,
+    "motion_blur_intensity": 1.0,
+    "pixelate_block_size": 20,
+    "pixelate_intensity": 1.0,
+    "blackbox_color": [
+      0,
+      0,
+      0
+    ],
+    "blackbox_opacity": 1.0,
+    "blackbox_rounded_corners": 0,
+    "region_padding": 40,
+    "temporal_smoothing": true,
+    "batch_size": 28,
+    "output_resolution": null,
+    "preserve_audio": true
+  },
+  "renderer_info": {
+    "default_strategy": "blur",
+    "class_strategies": {
+      "face": "motion_blur",
+      "breast": "blur",
+      "buttocks": "blackbox",
+      "genitals": "blackbox"
+    },
+    "available_strategies": [
+      "blur",
+      "gaussian",
+      "gauss",
+      "pixelate",
+      "pixel",
+      "blackbox",
+      "black",
+      "box",
+      "blackout",
+      "emoji"
+    ],
+    "cached_strategies": [],
+    "merge_iou": 0.5,
+    "temporal_blend_alpha": 0.7
+  },
+  "pipeline_type": "async_optimized",
+  "optimizations_enabled": {
+    "io_binding": true,
+    "cuda_streams": true,
+    "async_detection": true
+  }
+}
