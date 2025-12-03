@@ -4,11 +4,13 @@ This document summarizes the current performance characteristics of the AI Video
 These benchmarks help evaluate real-world efficiency, scaling, and production readiness.
 
 1. Summary Table
-Video Length	Processing Time	Throughput (Relative to Real-Time)	GPU Memory Usage
-30 sec	           1.5 min	        0.33× RT	                      ~2.9 GB
-1 min	             2.6 min	        0.38× RT	                      ~2.9 GB
-5 min	             ~13 min	        0.38× RT	                      ~2.9 GB
-20 min	           ~52 min	        0.38× RT	                      ~2.9 GB
+| **Video Length** | **Processing Time** | **Throughput (Relative to Real-Time)** | **GPU Memory Usage** |
+| ---------------- | ------------------- | -------------------------------------- | -------------------- |
+| **30 sec**       | **1.5 min**         | **0.33× RT**                           | **~2.9 GB**          |
+| **1 min**        | **2.6 min**         | **0.38× RT**                           | **~2.9 GB**          |
+| **5 min**        | **~13 min**         | **0.38× RT**                           | **~2.9 GB**          |
+| **20 min**       | **~52 min**         | **0.38× RT**                           | **~2.9 GB**          |
+
 2. Key Observations
 2.1 Throughput Stabilizes at ~0.38× Real-Time
 
@@ -63,12 +65,14 @@ Frame-by-frame censorship rendering
 ffmpeg-based I/O adds a small overhead (~5–10% of total time)
 
 5. Scalability Behavior
-Factor	                                      Impact on Speed
-Longer videos	                              Stable throughput after warm-up
-Higher resolution input (1080p → 4K)	     Moderate slowdown (expected)
-Multiple nudity regions per frame	         Small constant overhead
-Faces-only videos	                         Faster processing (fewer nudity detectors triggered)
-GPU upgrade (A100/L4)	                     Expected 2.5×–4× throughput improvement
+| **Factor**                               | **Impact on Speed**                                  |
+| ---------------------------------------- | ---------------------------------------------------- |
+| **Longer videos**                        | Stable throughput after warm-up                      |
+| **Higher resolution input (1080p → 4K)** | Moderate slowdown (expected)                         |
+| **Multiple nudity regions per frame**    | Small constant overhead                              |
+| **Faces-only videos**                    | Faster processing (fewer nudity detectors triggered) |
+| **GPU upgrade (A100/L4)**                | Expected **2.5×–4× throughput improvement**          |
+
 6. Recommendations for Next Optimization Cycle
 
 Convert RT-DETR to ONNX + TensorRT for 1.5×–3× inference speedup
@@ -84,7 +88,10 @@ Add asynchronous CUDA streams for overlapping I/O & inference
 With these optimizations, real-time (1.0× RT) performance on T4 is achievable.
 
 7. Future Benchmark Targets
-Goal	                              Target Metric
-Short-term (2–3 weeks)	           0.6×–0.8× RT throughput
-Medium-term (1–2 months)	         1.0×–1.2× RT throughput
-Long-term (production hardware)	   2×–3× real-time
+| Goal                                | Target Metric           |
+| ----------------------------------- | ----------------------- |
+| **Short-term (2–3 weeks)**          | 0.6×–0.8× RT throughput |
+| **Medium-term (1–2 months)**        | 1.0×–1.2× RT throughput |
+| **Long-term (production hardware)** | 2×–3× real-time         |
+
+
