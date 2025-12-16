@@ -14,7 +14,7 @@ def test_full_pipeline():
     """Test complete pipeline on a video."""
     
     input_video = "input video "
-    output_video = r"output video"
+    output_video = "output video"
     
     if not Path(input_video).exists():
         print(f"❌ Test video not found: {input_video}")
@@ -138,4 +138,5 @@ if __name__ == "__main__":
         print("  2. Test different censorship methods")
         print("  3. Test with GPU (when available)")
     else:
+
         print("\n⚠️  Some tests failed. Check the errors above.")
